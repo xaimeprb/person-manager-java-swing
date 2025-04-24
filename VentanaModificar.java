@@ -5,12 +5,11 @@ import java.awt.EventQueue;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class VentanaModificar {
@@ -58,25 +57,25 @@ public class VentanaModificar {
 		JLabel jlDni = new JLabel("DNI:");
 		panel.add(jlDni);
 		
-		JTextArea jtDni = new JTextArea((String) modelo.getValueAt(filaModificar, 0)); // Si ponemos (String) modelo.getValueAt(filaModificar, 0) dentro de JTextArea nos aparecerá la info de la tabla
+		JTextField jtDni = new JTextField((String) modelo.getValueAt(filaModificar, 0)); // Si ponemos (String) modelo.getValueAt(filaModificar, 0) dentro de JTextArea nos aparecerá la info de la tabla
 		panel.add(jtDni);
 		
 		JLabel jlNombre = new JLabel("Nombre:");
 		panel.add(jlNombre);
 		
-		JTextArea jtNombre = new JTextArea();
+		JTextField jtNombre = new JTextField();
 		panel.add(jtNombre);
 		
 		JLabel jlApellido = new JLabel("Apellido:");
 		panel.add(jlApellido);
 		
-		JTextArea jtApellido = new JTextArea();
+		JTextField jtApellido = new JTextField();
 		panel.add(jtApellido);
 		
 		JLabel jlTelefono = new JLabel("Telefono:");
 		panel.add(jlTelefono);
 		
-		JTextArea jtTelefono = new JTextArea();
+		JTextField jtTelefono = new JTextField();
 		panel.add(jtTelefono);
 		
 		JPanel panel_1 = new JPanel();
